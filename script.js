@@ -180,7 +180,76 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 1500);
     }
 
-    // --- 5. GSAP ScrollReveal ---
+    // --- 5. Email Modal Logic ---
+    const emailModal = document.getElementById('email-modal');
+    const emailModalContent = document.getElementById('email-modal-content');
+    const openModalBtns = document.querySelectorAll('.open-email-modal');
+    const closeBtns = [document.getElementById('close-modal'), document.getElementById('close-modal-btn')];
+    const copyBtn = document.getElementById('copy-email');
+    const emailText = document.getElementById('email-text');
+    const copySuccess = document.getElementById('copy-success');
+
+    function openModal(e) {
+        if(e) e.preventDefault();
+        if(!emailModal) return;
+        emailModal.classList.remove('hidden');
+        emailModal.classList.add('flex');
+        // small delay for transition
+        setTimeout(() => {
+            emailModal.classList.remove('opacity-0');
+            if(emailModalContent) {
+                emailModalContent.classList.remove('scale-95');
+                emailModalContent.classList.add('scale-100');
+            }
+        }, 10);
+    }
+
+    function closeModal() {
+        if(!emailModal) return;
+        emailModal.classList.add('opacity-0');
+        if(emailModalContent) {
+            emailModalContent.classList.remove('scale-100');
+            emailModalContent.classList.add('scale-95');
+        }
+        setTimeout(() => {
+            emailModal.classList.add('hidden');
+            emailModal.classList.remove('flex');
+            if(copySuccess) copySuccess.classList.add('opacity-0'); // reset copy text
+        }, 300);
+    }
+
+    openModalBtns.forEach(btn => {
+        btn.addEventListener('click', openModal);
+    });
+
+    closeBtns.forEach(btn => {
+        if(btn) btn.addEventListener('click', closeModal);
+    });
+
+    // Close on outside click
+    if(emailModal) {
+        emailModal.addEventListener('click', (e) => {
+            if (e.target === emailModal) {
+                closeModal();
+            }
+        });
+    }
+
+    // Copy to clipboard
+    if (copyBtn && emailText && copySuccess) {
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(emailText.textContent).then(() => {
+                copySuccess.classList.remove('opacity-0');
+                setTimeout(() => {
+                    copySuccess.classList.add('opacity-0');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy!', err);
+            });
+        });
+    }
+
+    // --- 6. GSAP ScrollReveal ---
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
