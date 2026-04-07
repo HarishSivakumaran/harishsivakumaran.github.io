@@ -19,13 +19,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 font-bold text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-                    Dear Gentle Reader,
+                    Dearest Gentle Reader,
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#home" class="hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="#about" class="hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="#experience" class="hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#projects" class="hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
                         <a href="#skills" class="hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
                     </div>
                 </div>
@@ -214,16 +215,116 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-900 relative border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 gs-reveal">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="text-cyan-400 font-mono text-xl mr-2">03.</span> ML Projects & Open Source
+                <div class="h-px bg-gray-700 flex-grow ml-4"></div>
+            </h2>
+            <p class="text-gray-400 mb-10 max-w-2xl">A collection of machine learning algorithms, deep learning models, and reinforcement learning environments built from scratch or implemented for specialized tasks.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-folder-open text-3xl text-cyan-400/80 group-hover:text-cyan-400 transition-colors"></i>
+                        <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">NanoGPT & LLMs</h3>
+                    <p class="text-sm text-gray-400 mb-4 flex-grow">Implementations of Transformer architectures including NanoGPT from scratch and analysis of LLM Batch Invariance.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-gray-500 mt-auto">
+                        <span>Transformers</span>
+                        <span>Attention</span>
+                        <span>PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-eye text-3xl text-cyan-400/80 group-hover:text-cyan-400 transition-colors"></i>
+                        <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Computer Vision</h3>
+                    <p class="text-sm text-gray-400 mb-4 flex-grow">Vision Transformers (ViT), U-Net Image Segmentation, Face Detection with Siamese Networks, and YOLO Object Detection.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-gray-500 mt-auto">
+                        <span>ViT</span>
+                        <span>U-Net</span>
+                        <span>YOLO</span>
+                        <span>Siamese</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-magic text-3xl text-cyan-400/80 group-hover:text-cyan-400 transition-colors"></i>
+                        <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Generative Models</h3>
+                    <p class="text-sm text-gray-400 mb-4 flex-grow">Image Generation using VAEs, Image Inpainting with Fourier Convolutions, and Sequence generation (Music/Lyrics) using LSTMs/GRUs.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-gray-500 mt-auto">
+                        <span>VAE</span>
+                        <span>LSTM</span>
+                        <span>GRU</span>
+                        <span>Fourier</span>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-brain text-3xl text-cyan-400/80 group-hover:text-cyan-400 transition-colors"></i>
+                        <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Algorithms from Scratch</h3>
+                    <p class="text-sm text-gray-400 mb-4 flex-grow">Building foundational algorithms from the ground up, including XGBoost, SVMs, and Recurrent Neural Networks.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-gray-500 mt-auto">
+                        <span>XGBoost</span>
+                        <span>SVM</span>
+                        <span>RNN</span>
+                        <span>Math</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-gamepad text-3xl text-cyan-400/80 group-hover:text-cyan-400 transition-colors"></i>
+                        <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Reinforcement Learning</h3>
+                    <p class="text-sm text-gray-400 mb-4 flex-grow">Solving environments using Reinforcement Learning techniques, including Deep Q-Learning on the FrozenLake environment.</p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-gray-500 mt-auto">
+                        <span>RL</span>
+                        <span>Deep Q</span>
+                        <span>Gym</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-gray-800/50 p-6 rounded border border-gray-700 hover:border-cyan-400/50 transition-colors group flex flex-col h-full items-center justify-center text-center">
+                    <a href="https://github.com/HarishSivakumaran/ML-Projects" target="_blank" class="inline-flex flex-col items-center text-gray-400 hover:text-cyan-400 transition-colors">
+                        <i class="fas fa-arrow-right text-4xl mb-4"></i>
+                        <span class="font-bold text-lg">View All 25+ Projects</span>
+                        <span class="font-mono text-sm mt-2">on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills & Achievements Section -->
-    <section id="skills" class="py-24 bg-gray-900 relative border-t border-gray-800">
+    <section id="skills" class="py-24 bg-gray-800/50 relative border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 gs-reveal">
             <h2 class="text-3xl font-bold mb-12 flex items-center justify-center">
-                <span class="text-cyan-400 font-mono text-xl mr-2">03.</span> Arsenal & Highlights
+                <span class="text-cyan-400 font-mono text-xl mr-2">04.</span> Arsenal, Certs & Highlights
                 <div class="h-px bg-gray-700 flex-grow max-w-xs ml-4 hidden md:block"></div>
                 <div class="h-px bg-gray-700 flex-grow max-w-xs mr-4 hidden md:block order-first"></div>
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Skill Card 1 -->
                 <div class="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-cyan-400/50 group">
                     <div class="flex justify-between items-center mb-4">
@@ -244,9 +345,9 @@
                 <!-- Skill Card 2 -->
                 <div class="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-cyan-400/50 group">
                     <div class="flex justify-between items-center mb-4">
-                        <i class="fas fa-brain text-3xl text-cyan-400"></i>
+                        <i class="fas fa-network-wired text-3xl text-purple-400"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">AI / Machine Learning</h3>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">AI / Machine Learning</h3>
                     <p class="text-gray-400 text-sm mb-4">Building, training, and serving large scale models.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-xs font-mono bg-purple-900/30 text-purple-300 rounded border border-purple-800">JAX</span>
@@ -256,24 +357,40 @@
                         <span class="px-2 py-1 text-xs font-mono bg-purple-900/30 text-purple-300 rounded border border-purple-800">AI Agents</span>
                     </div>
                 </div>
-
-                <!-- Skill Card 3 -->
-                <div class="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-cyan-400/50 group">
+                
+                <!-- Skill Card 3 (Certifications) -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-blue-400/50 group">
                     <div class="flex justify-between items-center mb-4">
-                        <i class="fas fa-award text-3xl text-cyan-400"></i>
+                        <i class="fas fa-graduation-cap text-3xl text-blue-400"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">Highlights</h3>
-                    <p class="text-gray-400 text-sm mb-4">Achievements & Mentorship.</p>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Coursera Certifications</h3>
+                    <p class="text-gray-400 text-sm mb-4">Continuous learning in ML mathematics and deep learning.</p>
+                    <ul class="text-sm text-gray-400 space-y-2 font-mono">
+                        <li><a href="https://www.coursera.org/account/accomplishments/specialization/B7LT44XRH1AN" target="_blank" class="hover:text-blue-400 transition-colors flex"><i class="fas fa-link mt-1 mr-2 text-blue-500/50"></i> Mathematics for ML & Data Science</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/verify/HPN13M660JWW" target="_blank" class="hover:text-blue-400 transition-colors flex"><i class="fas fa-link mt-1 mr-2 text-blue-500/50"></i> Neural Networks and Deep Learning</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/verify/21NRG0BICDT8" target="_blank" class="hover:text-blue-400 transition-colors flex"><i class="fas fa-link mt-1 mr-2 text-blue-500/50"></i> Convolutional Neural Networks</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/verify/GEKZ65CEGULG" target="_blank" class="hover:text-blue-400 transition-colors flex"><i class="fas fa-link mt-1 mr-2 text-blue-500/50"></i> Linear Algebra for ML & Data Science</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/verify/03VCPTDGTWYH" target="_blank" class="hover:text-blue-400 transition-colors flex"><i class="fas fa-link mt-1 mr-2 text-blue-500/50"></i> Probability & Statistics for ML</a></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 4 (Highlights) -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-transform duration-300 border border-gray-700 hover:border-yellow-400/50 group">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fas fa-award text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">Highlights</h3>
+                    <p class="text-gray-400 text-sm mb-4">Professional achievements & Mentorship.</p>
                     <ul class="text-sm text-gray-400 space-y-3">
                         <li class="flex items-center"><i class="fas fa-star text-yellow-500 mr-2 mt-1 self-start"></i> L5 Promotion (H1 2025)</li>
                         <li class="flex items-start flex-col">
-                            <a href="https://patents.google.com/patent/US11875017B2/en" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center font-bold">
-                                <i class="fas fa-certificate text-cyan-400 mr-2"></i> 
+                            <a href="https://patents.google.com/patent/US11875017B2/en" target="_blank" class="hover:text-yellow-400 transition-colors flex items-center font-bold">
+                                <i class="fas fa-certificate text-yellow-400 mr-2"></i> 
                                 US Patent US11875017B2
                             </a>
                             <span class="text-xs text-gray-500 mt-1 ml-6 leading-tight">Intelligent adjustment of documents via machine learning (Recommends adjustments to digital documents based on user trends).</span>
                         </li>
-                        <li class="flex items-center"><i class="fas fa-chalkboard-teacher text-cyan-400 mr-2 mt-1 self-start"></i> Org-wide GenAI Speaker</li>
+                        <li class="flex items-center"><i class="fas fa-chalkboard-teacher text-yellow-400 mr-2 mt-1 self-start"></i> Org-wide GenAI Speaker</li>
                     </ul>
                 </div>
             </div>
@@ -289,6 +406,7 @@
             <a href="https://patents.google.com/patent/US11875017B2/en" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl" title="Patent"><i class="fas fa-certificate"></i></a>
         </div>
         <p class="font-mono text-xs text-gray-500">Built by Harish Sivakumaran</p>
+        <p class="font-mono text-xs text-gray-600 mt-1">Google Internal</p>
     </footer>
 
     <!-- GSAP for Animations -->
